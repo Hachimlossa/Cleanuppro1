@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cleanup Pro - Nettoyage Canapés</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f6fff9;
+      color: #264653;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(90deg, #2a9d8f, #1d3557);
+      color: white;
+    }
+    header img {
+      max-width: 300px;
+      margin-top: 10px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #2a9d8f;
+      border-left: 5px solid #2a9d8f;
+      padding-left: 10px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .tarifs {
+      background-color: #e0f7f1;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      background: #264653;
+      color: white;
+      padding: 20px;
+    }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .contact input, .contact textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: 'Poppins';
+    }
+    .contact button {
+      padding: 12px;
+      background-color: #2a9d8f;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .contact button:hover {
+      background-color: #21867a;
+    }
+    .whatsapp {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .whatsapp a {
+      background: #25d366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cleanup Pro</h1>
+    <p>Nettoyage professionnel de canapés à domicile</p>
+    <img src="slogan.png" alt="Slogan Cleanup Pro">
+  </header>
+
+  <section>
+    <h2>Avant / Après</h2>
+    <div class="gallery">
+      <img src="canape_avant1.png" alt="Avant nettoyage">
+      <img src="canape_apres1.png" alt="Après nettoyage">
+    </div>
+  </section>
+
+  <section class="tarifs">
+    <h2>Tarifs nettoyage canapé</h2>
+    <ul>
+      <li>Fauteuil : 15€</li>
+      <li>Canapé 2 places : 60€</li>
+      <li>Canapé 3 places : 70€</li>
+      <li>Canapé 4 places : 80€</li>
+      <li>Canapé 5 places : 90€</li>
+      <li>6 places et plus : sur devis</li>
+    </ul>
+    <p><strong>⚠️ Une photo du canapé est obligatoire pour valider le prix.</strong></p>
+    <p>💬 Certaines taches très tenaces peuvent ne pas disparaître sans abîmer le tissu.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <form class="contact">
+      <input type="text" placeholder="Nom et Prénom" required>
+      <input type="text" placeholder="Adresse Postale" required>
+      <input type="tel" placeholder="Numéro de téléphone" required>
+      <input type="file" accept="image/*">
+      <textarea rows="4" placeholder="Disponibilité pour un appel..."></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <div class="whatsapp">
+      <a href="https://wa.me/33612345678" target="_blank">📞 Contact WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Cleanup Pro. Tous droits réservés.
+  </footer>
+</body>
+</html>
